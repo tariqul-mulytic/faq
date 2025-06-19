@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mulytic Energy - FAQ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004e89;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #004e89;
+    }
+    .faq {
+      margin: 20px 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+      color: #222;
+    }
+    .answer {
+      display: none;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const faqs = document.querySelectorAll(".question");
+      faqs.forEach(q => {
+        q.addEventListener("click", () => {
+          const answer = q.nextElementSibling;
+          answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Mulytic Energy</h1>
+    <p>Frequently Asked Questions (FAQ)</p>
+  </header>
+
+  <main>
+    <div class="faq">
+      <div class="question">1. What is an EV charger?</div>
+      <div class="answer">An EV charger supplies electric energy to recharge electric vehicles (EVs) from the power grid.</div>
+    </div>
+    <div class="faq">
+      <div class="question">2. How long does it take to charge an EV?</div>
+      <div class="answer">Charging time depends on the charger type and battery size. Fast chargers can charge up to 80% in 30 minutes.</div>
+    </div>
+    <div class="faq">
+      <div class="question">3. Do you support home installation of chargers?</div>
+      <div class="answer">Yes, we offer certified home installation services for residential EV chargers.</div>
+    </div>
+    <div class="faq">
+      <div class="question">4. Are your EV chargers compatible with all car models?</div>
+      <div class="answer">Our chargers support most EVs, including models from Tesla, Nissan, BMW, Hyundai, and more.</div>
+    </div>
+    <div class="faq">
+      <div class="question">5. What’s the warranty period for your chargers?</div>
+      <div class="answer">We provide a standard 3-year warranty on all our EV charging products.</div>
+    </div>
+    <div class="faq">
+      <div class="question">6. Can I monitor my charger usage?</div>
+      <div class="answer">Yes, our smart chargers come with mobile app integration to monitor and manage your charging sessions.</div>
+    </div>
+    <div class="faq">
+      <div class="question">7. Are your chargers weatherproof?</div>
+      <div class="answer">Absolutely. Our chargers are IP-rated and designed to withstand harsh weather conditions.</div>
+    </div>
+    <div class="faq">
+      <div class="question">8. Do you offer public charging stations?</div>
+      <div class="answer">Yes, we install and maintain public charging stations across cities and highways.</div>
+    </div>
+    <div class="faq">
+      <div class="question">9. How do I pay for a public charge?</div>
+      <div class="answer">You can use our mobile app or contactless payment methods like credit cards or NFC.</div>
+    </div>
+    <div class="faq">
+      <div class="question">10. How can I contact support?</div>
+      <div class="answer">You can reach our support team at support@evchargercompany.com or call us at 123-456-7890.</div>
+    </div>
+  </main>
+</body>
+</html>
+
